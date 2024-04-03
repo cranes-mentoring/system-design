@@ -22,4 +22,4 @@
 22. Load balancers (service, database), API GW, Circuit Breaker.
 23. Distributed tracing. Logs.
 24. Metrics – Prometheus, Victoria Metrics, Grafana.
-25. CQRS pattern and ELK.
+25. CQRS pattern and Elasticsearch.
