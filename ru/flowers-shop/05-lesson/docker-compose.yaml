@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: postgres-stocks
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
