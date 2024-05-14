@@ -1,7 +1,7 @@
 **Welcome to System Design Mastery Course**
 
-Last update: 03/31/2024
-Version: 0.0.1
+Last update: 05/14/2024
+Version: 0.1.0
 
 Welcome to the System Design Mastery Course! In this comprehensive course, you will dive deep into the world of system design, learning essential concepts, principles, and best practices to become a proficient system designer.
 
