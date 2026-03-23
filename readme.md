@@ -1,38 +1,82 @@
-**Welcome to System Design Mastery Course**
+# System Design Course
 
-Last update: 08/21/2024
-Version: 0.1.1
+Полный курс по проектированию высоконагруженных систем для бэкенд-разработчиков.  
+Примеры кода на Go. Написан практиками для практиков.
 
-Welcome to the System Design Mastery Course! In this comprehensive course, you will dive deep into the world of system design, learning essential concepts, principles, and best practices to become a proficient system designer.
+> 🇷🇺 [Русская версия](ru/) | 🇬🇧 [English version](eng/)
 
-### About the Course:
-System design is a crucial aspect of software engineering, enabling you to architect scalable, reliable, and high-performance systems to meet the demands of modern applications. Whether you are a beginner looking to build a strong foundation or an experienced developer aiming to enhance your skills, this course is designed to cater to all levels of expertise.
+---
 
-### What You'll Learn:
-- **Fundamental Concepts**: Gain a solid understanding of system design principles, including scalability, reliability, availability, and performance.
-- **Architectural Patterns**: Explore various architectural patterns and learn how to apply them to real-world scenarios.
-- **Technologies and Tools**: Master essential technologies and tools such as PostgreSQL, Redis, Kafka, and more to build robust systems.
-- **Best Practices**: Learn industry best practices for designing, implementing, and maintaining complex systems.
-- **Hands-on Projects**: Apply your knowledge through hands-on projects and practical exercises designed to reinforce learning.
+## Для кого
 
-### Course Structure:
-The course is divided into comprehensive modules, each covering specific topics in system design. From understanding requirements to implementing advanced architectural patterns, you will progress through a structured learning journey that will equip you with the skills and knowledge needed to excel in system design.
+- Бэкенд-разработчики с опытом 2+ лет
+- Готовящиеся к System Design интервью
+- Тимлиды, проектирующие архитектуру новых сервисов
 
-### Who Should Take This Course:
-- Software Engineers
-- System Architects
-- DevOps Engineers
-- Computer Science Students
-- Anyone interested in mastering system design principles and practices
+## Что внутри
 
-### What You'll Need:
-- Basic understanding of programming concepts (preferably in Python)
-- A curious mind and a passion for learning!
+12 модулей — от основ до практических кейсов. Каждый модуль содержит теорию, ASCII-диаграммы, таблицы сравнений, примеры кода на Go и ссылки на дополнительные материалы.
 
-### Get Started:
-Ready to embark on your journey to mastering system design? Enroll now and unlock the potential to design scalable, reliable, and high-performance systems that meet the demands of today's technology landscape.
+---
 
-### Let's Get Started!
-Join us and become a System Design Master today!
+## 📋 Программа курса
 
-Happy Learning! 🚀
+### Основы
+| # | Модуль | Ключевые темы |
+|---|--------|---------------|
+| 01 | [Основы System Design](ru/01-fundamentals/) | Фреймворк RESHADED, back-of-the-envelope estimation, CAP/PACELC, SLA/SLO/SLI |
+| 02 | [Сеть и протоколы](ru/02-networking/) | DNS, HTTP/2/3, REST vs gRPC vs GraphQL, Load Balancing, API Gateway, Service Discovery |
+
+### Данные
+| # | Модуль | Ключевые темы |
+|---|--------|---------------|
+| 03 | [Базы данных](ru/03-databases/) | PostgreSQL, индексы (B-tree, GIN, GiST), транзакции, изоляции, MVCC, SQL vs NoSQL |
+| 04 | [Масштабирование данных](ru/04-scaling-data/) | Репликация, партиционирование, шардинг, consistent hashing, CDC, multi-region |
+| 05 | [Кеширование](ru/05-caching/) | Cache-aside, write-through, Redis, CDN, cache stampede, инвалидация |
+
+### Архитектура
+| # | Модуль | Ключевые темы |
+|---|--------|---------------|
+| 06 | [Очереди и async](ru/06-message-queues/) | Kafka deep dive, NATS JetStream, RabbitMQ, event-driven architecture |
+| 07 | [Паттерны распределённых систем](ru/07-distributed-patterns/) | Saga, Outbox, CQRS, Event Sourcing, Raft, distributed locks |
+| 08 | [Микросервисы](ru/08-microservices/) | Монолит → микросервисы, API design, service mesh, deployment strategies |
+
+### Эксплуатация
+| # | Модуль | Ключевые темы |
+|---|--------|---------------|
+| 09 | [Наблюдаемость](ru/09-observability/) | Логи (slog), метрики (Prometheus), трейсинг (OpenTelemetry), incident management |
+| 10 | [Надёжность](ru/10-reliability/) | Circuit breaker, retry, rate limiting, load shedding, chaos engineering, DR |
+| 11 | [Безопасность](ru/11-security/) | JWT, OAuth 2.0, RBAC/ABAC, mTLS, OWASP Top 10, secrets management, Zero Trust |
+
+### Практика
+| # | Модуль | Ключевые темы |
+|---|--------|---------------|
+| 12 | [Практические кейсы](ru/12-practice-cases/) | URL Shortener, Мессенджер, News Feed, Rate Limiter, Notification Service, Task Scheduler |
+
+---
+
+## 🛠 Технологии
+
+- **Язык**: Go
+- **Базы данных**: PostgreSQL, Redis, Cassandra, MongoDB, ClickHouse
+- **Message Brokers**: Kafka, NATS, RabbitMQ
+- **Observability**: Prometheus, Grafana, OpenTelemetry, Jaeger
+- **Infrastructure**: Docker, Kubernetes, Istio
+
+## 📚 Рекомендуемые книги
+
+- *Designing Data-Intensive Applications* — Martin Kleppmann
+- *System Design Interview* (Vol. 1 & 2) — Alex Xu
+- *Building Microservices* — Sam Newman
+- *Site Reliability Engineering* — Google
+- *Database Internals* — Alex Petrov
+
+---
+
+## Contributing
+
+Нашли ошибку или хотите дополнить? Открывайте Issue или Pull Request.
+
+## License
+
+MIT
